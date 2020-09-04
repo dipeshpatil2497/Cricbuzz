@@ -1,0 +1,55 @@
+<div class="container-fluid">
+    <div class="row justify-content-center">
+
+        <div class="col-12 text-light p-0 h3 mt-3 bg-dark d-flex justify-content-center" style="font-weight:bold">
+            INTERNATIONAL</div>
+
+        <!--1st Row-->
+        <div class="col-12 mt-3 bg-secondary" *ngFor="let items of Matchlist">
+
+            <!--Date-->
+            <div class="row align-items-center" style=" background: lightgrey; height: 40px;">
+                <h6 class="ml-3 my-0" style="font-weight: bold;">
+                    {{items.date}}
+                </h6>
+            </div>
+
+
+            <!--Match Desc-->
+            <div class="row  d-flex justify-content-between align-items-centerh-auto py-3">
+
+                <!--1 col-->
+                <div class=" col-4 col-md-4 d-flex justify-content-center align-items-center">
+                    <h6><strong>{{items.match}}</strong></h6>
+                </div>
+
+                <!--2 col-->
+                <div class="col-4 col-md-4 d-flex justify-content-center align-items-center">
+                    <p style="font-size: 15px; margin: 0%;">
+                        {{items.matchdesc}}
+                        <br>
+                        <small>
+                            {{items.loc}}
+                        </small>
+                    </p>
+                </div>
+
+                <!--3 col-->
+                <div class="col-4 col-md-4 d-flex justify-content-center align-items-center">
+                    <p style="font-size: 15px; margin: 0%;">
+                        {{items.time1}}
+                        <br>
+                        <small>
+                            {{items.time2}}
+                        </small>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+</div>

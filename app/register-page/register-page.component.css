@@ -1,0 +1,125 @@
+
+h1 {
+    font-family: 'Shrikhand';
+}
+
+.box{
+    height: 600px; 
+    border-radius: 5px 95px; 
+    background: transparent;
+    border:2px solid #343a40;
+    /* margin-right: 150px; */
+}
+
+#InputUser,
+#InputPassword1,
+#InputPassword2,
+#InputEmail1 {
+    width: 300px;
+    text-align: center;
+    background: transparent;
+    border: 1px solid#343a40;
+    /* border-radius: 50px; */
+    margin-top: 20px;
+    outline: none;
+    color:#343a40;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 25px;
+}
+
+::placeholder {
+    color: #343a40;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#btn {
+    width: 150px;
+    margin-top: 25px;
+}
+.gobacktosignin a{
+    font-size: 20px;
+}
+.gobacktosignin a:hover {
+    text-decoration: none;
+}
+
+@media(max-width :700px){
+    .imgdhoni{
+        display: none;
+    }
+    .box{
+        width: 100vh;
+        margin-right: 0;
+        background-position: left;
+        border-radius: 5px 5px; 
+    }
+};
+
+
+
+/* .Setbgtoreg{
+    background-image: url("C:/Users/User/Desktop/Angular/Cricbuzz/src/assets/image/cric-bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#container{
+    box-shadow:20px 20px 50px 15px grey;
+
+    border-radius: 10px;
+}
+
+#accname{
+    font-family: 'Alata', sans-serif;
+    font-size: 25px;
+}
+
+#uname{
+    width: 35vw;
+    margin-top: 45px;
+}
+
+#email{
+    width: 35vw;
+    margin-top: 25px;
+}
+
+#password{
+    width: 35vw;
+    margin-top: 25px;
+}
+
+#phone{
+    width: 35vw;
+    margin-top: 25px;
+}
+
+#chkbox{
+    font-family: 'Alata', sans-serif;
+    font-size: 12px;
+
+    padding-left: 10px;
+    padding-top: 0px;
+
+    margin-top: 0px;
+}
+
+#button{
+    width: 60vh;
+    font-family: 'Alata', sans-serif;
+    background: linear-gradient(mediumseagreen,green);
+}
+
+a{
+    padding-left: 8px;
+    font-family: 'Alata', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#ref{
+    font-family: 'Alata', sans-serif;
+    font-size: 14px;
+} */

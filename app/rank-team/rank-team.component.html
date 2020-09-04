@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <div class="row m-3">
+        <div class="col d-flex text-dark font-weight-bold align-items-center justify-content-center"
+            style="height: 40px; font-size: 20px; border: 2px solid #343a40;">
+            Teams Rank
+        </div>
+    </div>
+    <div class="row my-3 text-dark align-items-center border font-weight-bold mx-2"
+        style="height: 35px; background-color: whitesmoke;">
+        <div class="col-3">Position</div>
+        <div class="col-5">Team</div>
+        <div class="col-2">Rating</div>
+        <div class="col-2">Points</div>
+    </div>
+    <div class="row my-3 text-dark mx-2 my-md-2" *ngFor="let item of teamlist">
+        <div class="col-3 pl-5">{{item.rank}} </div>
+        <div class="col-5">{{item.country}} </div>
+        <div class="col-2">{{item.rating}} </div>
+        <div class="col-2">{{item.points}} </div>
+        <hr class="w-100 text-dark">
+    </div>
+</div>

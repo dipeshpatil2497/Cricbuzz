@@ -1,0 +1,190 @@
+<div class="container-fluid">
+    <div class="row justify-content-center mt-2">
+        <div class="col col-md-10 d-flex flex-column">
+            <div class="row navbar navbar-expand-lg navbar-light bg-dark">
+                <a class="navbar-brand" href="#"><img [src]="logoimg"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-light"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="m-auto">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ">
+                                <a class="nav-link text-secondary disabled" tabindex="-1" aria-disabled="true">
+                                    Live Scores
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" routerLink="/home-page/schedule/">
+                                    Schedule
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    routerLink="/home-page/teams/">
+                                    Teams
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item " routerLink="/home-page/teams/australia/">Australia</a>
+
+                                    <a class="dropdown-item" routerLink="/home-page/teams/india/">India</a>
+
+                                    <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">New
+                                        Zealand</a>
+
+                                    <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Sri
+                                        Lanka</a>
+
+                                    <a class="dropdown-item disabled" href="#" tabindex="-1"
+                                        aria-disabled="true">Bangladesh</a>
+
+                                    <a class="dropdown-item" routerLink="/home-page/teams/westindies/">West Indies</a>
+
+                                    <a class="dropdown-item disabled" href="#" tabindex="-1"
+                                        aria-disabled="true">England</a>
+
+                                    <a class="dropdown-item" routerLink="/home-page/teams/southafrica">South Africa</a>
+
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    routerLink="/home-page/ranking/">
+                                    Ranking
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#" routerLink="/home-page/ranking/">
+                                        ICC Ranking -Men
+                                    </a>
+                                    <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">ICC
+                                        Ranking -
+                                        Women</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" routerLink="/home-page/aboutus/">
+                                    About-Us
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link font-weight-bold" href="#" routerLink="/home-page/registerpage/"
+                                    (click)="gowithmodal()"
+                                    style="color: orangered; font-size: 18px; font-family:cursive">Subscription</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex my-2 my-lg-0">
+                        <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-light btn-sm my-sm-0" type="submit">Search</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle Section for dynamic data start  -->
+            <div class="row my-1">
+                <div class="col border rounded p-0">
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+            <!-- Middle Section for dynamic data end  -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="font-small bg-dark text-light pt-2">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left mt-3 pb-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">
+                        <img [src]="logoimg" class="mt-3">
+                    </h6>
+                    <p>
+                        We're building a cricket product for the generation of always connected internet users and we
+                        need your talent and passion.
+                    </p>
+                </div>
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">MOBILE SITE & APPS</h6>
+                    <p>
+                        <fa-icon [icon]="fafirefoxBrowser"></fa-icon>&nbsp;
+                        <span> m.cricbuzz.com</span>
+                    </p>
+                    <p>
+                        <fa-icon [icon]="faandroid"></fa-icon>&nbsp;
+                        <span>Android</span>
+                    </p>
+                    <p>
+                        <fa-icon [icon]="faapple"></fa-icon>&nbsp;&nbsp;
+                        <span>iOS</span>
+                    </p>
+                </div>
+
+                <hr class="w-100 d-md-none text-dark">
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">FOLLOW US ON</h6>
+                    <a class="text-light" style="text-decoration: none;" href="https://www.facebook.com/cricbuzz">
+                        <p>
+                            <fa-icon [icon]='fafacebook'></fa-icon>
+                            &nbsp;&nbsp;
+                            <span>Facbook</span>
+                        </p>
+                    </a>
+                    <a class="text-light" style="text-decoration: none;" href="https://twitter.com/cricbuzz">
+                        <p>
+                            <fa-icon [icon]='fatwitter'></fa-icon>&nbsp;
+                            <span>twitter</span>
+                        </p>
+                    </a>
+                    <a class="text-light" style="text-decoration: none;"
+                        href="https://www.youtube.com/channel/UCSRQXk5yErn4e14vN76upOw">
+                        <p>
+                            <fa-icon [icon]='fayoutube'></fa-icon>&nbsp;
+                            <span>youtube</span>
+                        </p>
+                    </a>
+                    <a class="text-light" style="text-decoration: none;" href="https://in.pinterest.com/cricbuzz/">
+                        <p>
+                            <fa-icon [icon]='fapinterest'></fa-icon>&nbsp;
+                            <span>Pinterest</span>
+                        </p>
+                    </a>
+                </div>
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">COMPANY</h6>
+                    <p>Careers</p>
+                    <p>Advertise</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Use</p>
+                    <p>Cricbuzz Tv Ads</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row ">
+                <div class="col-md-7 col-lg-8 d-flex align-items-center justify-content-center">
+                    <!--Copyright-->
+                    <p class="bg-dark text-md-left">© 2020 Copyright:
+                        Cricbuzz.com, Times Internet Limited. All rights!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</div>

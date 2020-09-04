@@ -1,0 +1,11 @@
+@media(max-width: 600px){
+    .allbtn a{
+         display: inline;
+         width: 30px;
+         font-size: 12px;
+         margin-left: 10px;
+    }
+    .allbtn a:nth-child(1){
+        margin-left: 90px;
+    }
+};

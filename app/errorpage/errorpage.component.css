@@ -1,0 +1,26 @@
+h1{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 200px;
+    
+    background-image: url("C:/Users/User/Desktop/Angular/Cricbuzz/src/assets/image/oopsback2.jpeg");
+    background-position:center ;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+h5{
+    
+    font-family: 'Rokkitt', serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+p{
+    font-family: 'Rokkitt', serif;
+    line-height: normal;
+}
+button{
+    font-size: 15px !important;
+    border-radius: 30px !important;
+}

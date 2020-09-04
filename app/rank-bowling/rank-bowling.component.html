@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <div class="row m-3">
+        <div class="col d-flex text-dark font-weight-bold align-items-center justify-content-center"
+            style="height: 40px; font-size: 20px; border: 2px solid #343a40;">
+            Bowling Rank
+        </div>
+    </div>
+    <div class="row my-3 text-dark align-items-center border font-weight-bold mx-2"
+        style="height: 35px; background-color: whitesmoke;">
+        <div class="col-3">Position</div>
+        <div class="col-6">Players</div>
+        <div class="col-3">Rating</div>
+    </div>
+    <div class="row my-3 text-dark mx-2 my-md-2" *ngFor="let item of playerslist">
+        <div class="col-3 pl-md-4">{{item.rank}} </div>
+        <div class="col-6 d-flex">
+            <div class="img mr-3"><img [src]="item.img"></div>
+            <div>
+                <div class="font-weight-bold" style="font-size: 18px;">{{item.name}}</div>
+                <div style="font-size: 15px;">{{item.country}}</div>
+            </div>
+        </div>
+        <div class="col-3 pl-4">{{item.points}}</div>
+        <hr class="w-100 text-dark">
+    </div>
+</div>
